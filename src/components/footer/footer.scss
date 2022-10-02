@@ -1,0 +1,27 @@
+footer.fixed {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    // background-color: var(--third-color);
+    padding: 0.5em;
+    justify-content: space-around;
+}
+
+footer.main-footer {
+    & .open-form {
+        background-color: var(--income-color);
+        border: none;
+        font-size: 1.2em;
+        display: flex;
+        gap: 0.5em;
+        color: white;
+        width: 90%;
+        justify-content: center;
+        border-radius: 2em;
+        padding: 0.3em 1em;
+    }
+
+}

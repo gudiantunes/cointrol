@@ -1,0 +1,40 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr;
+    justify-items: center;
+    background-color: var(--third-color);
+    margin: 0;
+    padding: 0.5rem;
+    a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: var(--font-color);
+        font-size: 1.5em;
+        align-self: center;
+    }
+    button {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+        height: 100%;
+        color: var(--font-color);
+        font-size: 1.5em;
+    }
+    h1{
+        font-size: 2em;
+        margin: 0;
+        font-variant: small-caps;
+
+        &#home-title{
+            color: var(--golden-color);
+        }
+        &#transaction-title {
+            color: var(--font-color);
+        }
+    }
+}

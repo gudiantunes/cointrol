@@ -1,0 +1,17 @@
+.balance {
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+    &__text {
+        color: var(--font-color);
+    }
+    &__value {
+        &.positive {
+            color: var(--income-color);
+        }
+        &.negative {
+            color: var(--outcome-color);
+        }
+    }
+}

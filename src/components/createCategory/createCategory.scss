@@ -1,0 +1,50 @@
+.nc-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0006;
+}
+.new-category {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 70%;
+    padding: 0.5em;
+    border-radius: 0.7em;
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-self: flex-start;
+        gap: 0.5em;
+    }
+    &__colors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.1em;
+        gap: 0.2em;
+        #color-picker {
+            display: none;
+        }
+        &__color {
+            width: 2.3em;
+            height: 2.3em;
+            border: 1px solid black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+    }
+    &__footer {
+        display: flex;
+        gap: 1em;
+    }
+}

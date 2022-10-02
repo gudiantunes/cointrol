@@ -1,0 +1,39 @@
+.transactions {
+    margin-top: 5em;
+}
+
+.month-select {
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    span {
+        min-width: 9em;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    button {
+        background-color: transparent;
+        color: var(--font-color);
+        cursor: pointer;
+        border: none;
+        font-size: 1.7em;
+    }
+}
+.transaction-list {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1em;
+    // color: white;
+    padding: 1em;
+    &__daily-view {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5em;
+        // background-color: var(--fourth-color);
+        padding: 0.5em;
+        &__title {
+            color: var(--font-color);
+        }
+    }
+}

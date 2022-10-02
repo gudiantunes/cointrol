@@ -1,0 +1,55 @@
+
+$border-bottom: 2px solid var(--accent-color);
+
+.transaction {
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr ;
+    grid-template-rows: 1fr 1fr;
+    background-color: var(--fourth-color);
+
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5em;
+
+    &__icon {
+        font-size: 1.5em;
+        border-bottom: $border-bottom;
+        margin: 0;
+    }
+
+    &__description {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        color: var(--font-color);
+        border-bottom: $border-bottom;
+        font-size: 1.5em;
+        margin: 0;
+    }
+    &__value {
+        border-bottom: $border-bottom;
+        font-size: 1.5em;
+        margin: 0;
+        &.positive {
+            color: var(--income-color)
+        }
+        &.negative {
+            color: var(--outcome-color)
+        }
+
+    }
+    &__details {
+        margin: 0;
+        display: flex;
+        gap: 1em;
+        justify-content: space-between;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        &__detail {
+            margin: 0;
+            display: flex;
+            gap: 0.5em;
+            align-items: center;
+            color: var(--font-color);
+        }
+    }
+}
