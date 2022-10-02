@@ -1,4 +1,4 @@
-# Coin.trol - An coin control app
+# Coin.trol - A coin control app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
